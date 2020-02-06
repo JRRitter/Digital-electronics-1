@@ -4,7 +4,7 @@ This repository is designated for the BUT course **Digital  Electronics 1**.
 
 ## Lookup link
 
-The main link for assignments is [this one](www.github.com/tomas-fryza/Digital-electronics-1/).
+The main link for assignments is [this one](https://github.com/tomas-fryza/Digital-electronics-1).
 
 ## A generic list
 * Item 1

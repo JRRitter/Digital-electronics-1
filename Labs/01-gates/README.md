@@ -1,4 +1,4 @@
-# CircuitVerse simulation
+# CircuitVerse simulation - basic logic gates
 A screenshot of our simulation schematic.
 
 
@@ -21,4 +21,8 @@ Now we try to verify DeMorgan's law by running these equations (original *f* and
 
 
 in CircruitVerse simulation.
+
+# Simulation - DeMorgan's law
+
+![demorgan](../../Images/01-logic-gates-2.png)
 

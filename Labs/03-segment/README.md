@@ -1,4 +1,4 @@
-
+# Seven segment display truth table
 
 | **Hex** | **Input** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |

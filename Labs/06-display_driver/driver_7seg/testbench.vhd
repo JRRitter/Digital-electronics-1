@@ -75,11 +75,6 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      --data0_in <= "0100";
-      --data1_in <= "0001";
-      --data2_in <= "0011";
-      --data3_in <= "0000";
-      --dp_in <= "0100";
  
       srst_n_in <= '1';
       wait until rising_edge(clk_in);	-- NEW

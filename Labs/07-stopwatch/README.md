@@ -3,3 +3,6 @@ Added files from EDA playground to this file. To go  to said playground [click h
 # Simulation
 Detail of stopwatch entity near overflow. 
 ![simul](../../Images/07-stopwatch-simul.PNG)
+# Top level implementation
+
+![top](../../Images/07-stopwatch-top.png)

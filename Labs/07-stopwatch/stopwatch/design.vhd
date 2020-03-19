@@ -12,11 +12,11 @@ use ieee.numeric_std.all;
 
 entity stopwatch is
 port(
-	-- INPUTS
-	clk_i    : in  std_logic;
+    -- INPUTS
+    clk_i    : in  std_logic;
     srst_n_i : in  std_logic;   -- Synchronous reset (active low)
     ce_100Hz_i: in  std_logic; 	-- clock enable
-	cnt_en_i : in std_logic;	-- stopwatch enable
+    cnt_en_i : in std_logic;	-- stopwatch enable
     -- OUTPUTS
     sec_h_o  : out unsigned(4-1 downto 0);
     sec_l_o  : out unsigned(4-1 downto 0);
@@ -34,7 +34,7 @@ architecture Behavioral of stopwatch is
     signal s_hth_h	: unsigned(4-1 downto 0) := x"0";
     signal s_hth_l	: unsigned(4-1 downto 0) := x"0";
 begin
-	--------------------------------------------------------------------
+    --------------------------------------------------------------------
     -- p_watch_cnt:
     -- Sequential process with synchronous reset, which keeps track of
     -- time (up to one minute) with 0.01 sec resolution 
@@ -47,7 +47,7 @@ begin
                 s_sec_l <= x"0";
                 s_hth_h <= x"0";
                 s_hth_l <= x"0";
-            elsif ce_100Hz_i = '1' then
+            elsif cnt_en_i = '1' then
             	if s_sec_h = x"5" and s_sec_l = x"9" and s_hth_h = x"9"
                 and s_hth_l = x"9" then 	-- Overflow reset
                 	s_sec_h <= x"0";
@@ -88,7 +88,7 @@ begin
                 sec_l_o <= x"0";
                 hth_h_o <= x"0";
                 hth_l_o <= x"0";
-            elsif cnt_en_i = '1' then
+            elsif ce_100Hz_i = '1' then
             	sec_h_o <= s_sec_h;
                 sec_l_o <= s_sec_l;
                 hth_h_o <= s_hth_h;

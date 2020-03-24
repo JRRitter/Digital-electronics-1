@@ -11,7 +11,7 @@ Simulation of traffic light system for simple 2 one-way intersection. Due to the
 * state YR2: yellow - red, lights_o = 0b010100 = 0x14
 * state RR3: red - red, lights_o = 0b100100 = 0x24
 * state RG4: red - green, lights_o = 0b100001 = 0x21
-* state RR0: red - yellow, lights_o = 0b100010 = 0x22
+* state RY5: red - yellow, lights_o = 0b100010 = 0x22
 
 So the correct cycle is 24 -> c -> 14 -> 24 -> 21 -> 22 -> 24 -> ... in hexadecimal notation.
 

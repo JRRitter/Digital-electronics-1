@@ -1,5 +1,6 @@
 # Solution
 Added files from EDA playground to this file. To go  to said playground [click here](https://www.edaplayground.com/x/mFE).
+The 3 Hz signal used in the instructional video had to be changed to 2 Hz because the clock_enable entity is not able to reliably create a 3 Hz signal from a 10 kHz clock.
 
 ## Variable type declaration in VHDL
 To declare a new variable type one uses the command: **type [variable-type-name] is ([list of possible states]);** as shown in the following screenshot from the vhd file of the **traffic_lights** entity

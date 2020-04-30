@@ -443,8 +443,13 @@ begin
     p_update : process (clk_i)
     begin
     	if rising_edge(clk_i) then -- Rising clock edge
-        	CLK_o <= s_CLK;
-            DIO_o <= s_DIO;
+        	if srst_n_i = '0' then
+            		CLK_o <= '1';
+                	DIO_o <= '1';
+           	else
+        		CLK_o <= s_CLK;
+            		DIO_o <= s_DIO;
+            	end if;
         end if; 
     end process p_update;
     

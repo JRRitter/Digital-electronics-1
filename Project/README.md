@@ -21,7 +21,7 @@ The simulation files are in their corresponding folder, they can be also found i
 
 # Commander
 
-This module's main input is the current time number from the countdown module. If a change is the detected, the new time is transformed into the minutes : seconds format. With this format a command sequence using the CLK and DIO outputs can be formed.
+This module's main input is the current time number from the countdown module. If a change is detected, the new time is transformed into the minutes : seconds format. With this format a command sequence using the CLK and DIO outputs can be formed.
 
 We use the adress auto increment 1 mode mentioned in its documentation.
 
